@@ -1,0 +1,12 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mailer.js",
+  "scripts": {
+    "start": "node mailer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

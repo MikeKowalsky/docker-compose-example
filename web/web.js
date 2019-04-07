@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) => res.render("index"));
 app.get("/newsletter", async (req, res) => {
-  const response = await axios.post("", {
+  const response = await axios.post("http://mailer-servie/send-mail", {
     email: req.body.email
   });
 
@@ -23,5 +23,5 @@ app.get("/newsletter", async (req, res) => {
 
 app.listen(process.env.PORT || 80, err => {
   if (err) throw err;
-  console.log("Server is up.");
+  console.log("Web-server is up.");
 });

@@ -13,5 +13,5 @@ app.post("/send-mail", (req, res) => {
 
 app.listen(process.env.PORT || 80, err => {
   if (err) throw err;
-  console.log("Server is up.");
+  console.log("Mailer-server is up.");
 });

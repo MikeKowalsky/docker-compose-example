@@ -13,8 +13,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => res.render("index"));
-app.get("/newsletter", async (req, res) => {
-  const response = await axios.post("http://mailer-servie/send-mail", {
+
+app.post("/newsletter", async (req, res) => {
+  const response = await axios.post("http://mailer-service/send-mail", {
     email: req.body.email
   });
 
